@@ -42,5 +42,5 @@ testem.log
 Thumbs.db
 log.txt
 pouch__all_dbs__
-_replicator
-_users
+/_replicator
+/_users
