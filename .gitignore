@@ -40,3 +40,7 @@ testem.log
 # System files
 .DS_Store
 Thumbs.db
+log.txt
+pouch__all_dbs__
+_replicator
+_users
