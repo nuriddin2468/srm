@@ -1,0 +1,47 @@
+<mat-toolbar>
+  <span>SRM</span>
+</mat-toolbar>
+<div class="main">
+  <mat-card class="card">
+    <mat-card-title i18n>Sign in</mat-card-title>
+    <mat-card-subtitle i18n>Please enter your credentials</mat-card-subtitle>
+    <mat-card-content>
+      <form class="form" [formGroup]="form">
+        <mat-error *ngIf="!validUser">Username or password is incorrect</mat-error>
+       <div class="form-item">
+         <mat-form-field class="form-input" appearance="outline">
+           <mat-label i18n>Username</mat-label>
+           <input formControlName="username" matInput placeholder="admin">
+           <mat-error
+             *ngIf="form.controls['username'].hasError('minlength') &&
+             !form.controls['username'].hasError('required')">
+             Please enter a valid username
+             <br><small>Minimal length of username should be 5 characters</small>
+           </mat-error>
+           <mat-error *ngIf="form.controls['username'].hasError('required')">
+             Username is <strong>required</strong>
+           </mat-error>
+         </mat-form-field>
+       </div>
+       <div class="form-item">
+         <mat-form-field class="form-input" appearance="outline">
+           <mat-label i18n>Password</mat-label>
+           <input formControlName="password" type="password" matInput>
+           <mat-error
+             *ngIf="form.controls['password'].hasError('minlength') &&
+             !form.controls['password'].hasError('required')">
+             Please enter a valid password
+             <br><small>Minimal length of password should be 5 characters</small>
+           </mat-error>
+           <mat-error *ngIf="form.controls['password'].hasError('required')">
+             Password is <strong>required</strong>
+           </mat-error>
+         </mat-form-field>
+       </div>
+      </form>
+    </mat-card-content>
+    <mat-card-actions class="footer">
+      <button mat-flat-button color="primary" (click)="signIn()" i18n>Sign-in</button>
+    </mat-card-actions>
+  </mat-card>
+</div>
