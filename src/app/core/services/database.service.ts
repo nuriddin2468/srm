@@ -10,8 +10,4 @@ export class DatabaseService {
   constructor() {
     this.db = new PouchDB('locale');
   }
-
-  log(): void {
-    console.log(this.db);
-  }
 }
