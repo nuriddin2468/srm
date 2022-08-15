@@ -5,7 +5,15 @@
     <div>
       <div></div>
       <div>
-        <mat-icon matBadge="4" [matMenuTriggerFor]="menu" color="warn">account_circle</mat-icon>
+        <button mat-icon-button color="primary">
+          <mat-icon>sync</mat-icon>
+        </button>
+        <button mat-icon-button>
+          <mat-icon matBadge="4" [matMenuTriggerFor]="menu" color="primary"
+            >person</mat-icon
+          >
+        </button>
+
         <mat-menu yPosition="below" #menu="matMenu">
           <button mat-menu-item>Personal Cabinet</button>
           <button mat-menu-item>Tasks</button>
