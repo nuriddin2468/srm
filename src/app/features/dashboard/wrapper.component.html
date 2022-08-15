@@ -23,7 +23,26 @@
   </mat-toolbar>
 </header>
 <main>
-  <nav></nav>
+  <nav>
+    <div class="toolbar">
+      <div>
+        <mat-icon class="close">menu_open</mat-icon>
+      </div>
+    </div>
+    <div class="menu-items">
+      <ul>
+        <li><a routerLink="/">
+          <div class="icon">
+            <mat-icon>badge</mat-icon>
+          </div>
+          <div class="text">
+            Employees
+          </div>
+        </a></li>
+        <li><a routerLink="/"><mat-icon></mat-icon> second item</a></li>
+      </ul>
+    </div>
+  </nav>
   <aside>
     <router-outlet></router-outlet>
   </aside>
