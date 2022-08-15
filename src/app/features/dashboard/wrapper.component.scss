@@ -1,0 +1,13 @@
+main {
+  display: flex;
+  height: 100vh;
+}
+
+nav {
+  background-color: gray;
+  grid-area: nav;
+}
+
+main {
+  grid-area: main;
+}

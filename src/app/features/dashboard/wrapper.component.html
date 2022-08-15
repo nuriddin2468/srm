@@ -1,0 +1,23 @@
+<header>
+  <mat-toolbar>
+    <span>SRM</span>
+    <span class="spacer"></span>
+    <div>
+      <div></div>
+      <div>
+        <mat-icon matBadge="4" [matMenuTriggerFor]="menu" color="accent">user</mat-icon>
+        <mat-menu yPosition="below" #menu="matMenu">
+          <button mat-menu-item>Personal Cabinet</button>
+          <button mat-menu-item>Tasks</button>
+        </mat-menu>
+      </div>
+    </div>
+  </mat-toolbar>
+</header>
+<main>
+  <nav>
+  </nav>
+  <aside>
+    <router-outlet></router-outlet>
+  </aside>
+</main>

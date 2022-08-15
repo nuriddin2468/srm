@@ -32,7 +32,7 @@ import { LayoutModule } from '@angular/cdk/layout';
         MatMenuModule,
         MatIconModule,
         MatButtonModule,
-        LayoutModule
+        LayoutModule,
     ],
   providers: [
   ],
