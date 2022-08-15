@@ -8,18 +8,18 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { DashboardRoutingModule } from './dashboard-routing.module';
 import { WrapperComponent } from './wrapper.component';
 
+import { MatButtonModule } from '@angular/material/button';
 
 @NgModule({
-  declarations: [
-    WrapperComponent
-  ],
+  declarations: [WrapperComponent],
   imports: [
     CommonModule,
     DashboardRoutingModule,
     MatToolbarModule,
     MatIconModule,
     MatBadgeModule,
-    MatMenuModule
-  ]
+    MatMenuModule,
+    MatButtonModule,
+  ],
 })
-export class DashboardModule { }
+export class DashboardModule {}
