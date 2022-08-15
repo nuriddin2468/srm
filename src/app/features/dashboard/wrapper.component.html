@@ -5,7 +5,7 @@
     <div>
       <div></div>
       <div>
-        <mat-icon matBadge="4" [matMenuTriggerFor]="menu" color="accent">user</mat-icon>
+        <mat-icon matBadge="4" [matMenuTriggerFor]="menu" color="warn">account_circle</mat-icon>
         <mat-menu yPosition="below" #menu="matMenu">
           <button mat-menu-item>Personal Cabinet</button>
           <button mat-menu-item>Tasks</button>
@@ -16,6 +16,24 @@
 </header>
 <main>
   <nav>
+    <div class="toolbar">
+      <div>
+        <mat-icon class="close">menu_open</mat-icon>
+      </div>
+    </div>
+    <div class="menu-items">
+      <ul>
+        <li><a routerLink="/">
+          <div class="icon">
+            <mat-icon>badge</mat-icon>
+          </div>
+          <div class="text">
+            Employees
+          </div>
+        </a></li>
+        <li><a routerLink="/"><mat-icon></mat-icon> second item</a></li>
+      </ul>
+    </div>
   </nav>
   <aside>
     <router-outlet></router-outlet>
